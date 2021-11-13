@@ -25,7 +25,7 @@ def registration(body):
             return 400,resp
         user_pass =  body.get("user_pass",None)
         pass_ = encrypt_pass(str(user_pass))
-        obj = { "user_id" : uuid.uuid4(),"user_name" : "surya", "user_pass" : pass_ }
+        obj = { "user_id" : uuid.uuid4(),"user_name" : user_name, "user_pass" : pass_ }
         u = user_reg(**obj)
         session.add(u)
         session.commit()
