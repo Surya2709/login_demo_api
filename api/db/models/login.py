@@ -1,11 +1,8 @@
-from enum import unique
 from sqlalchemy.inspection import inspect
 from sqlalchemy import Column, Integer
-from sqlalchemy.sql.expression import null
-from sqlalchemy.sql.sqltypes import VARCHAR, String
+from sqlalchemy.sql.sqltypes import String
 from conf.base import Base
 from sqlalchemy.dialects.postgresql import UUID
-
 
 class user_login(Base):
 

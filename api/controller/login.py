@@ -12,5 +12,10 @@ def encrypt_pass(password):
 
 def check_registration(body):
 
-    resp = ""
+    resp = "working"
     return resp
+
+
+def login(body):
+
+    return "login"
