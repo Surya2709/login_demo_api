@@ -10,7 +10,7 @@ class Config:
     DEBUG = True
     DEVELOPMENT = True
     CSRF_ENABLED = True
-    SECRET_KEY = 'secret'
+    SECRET_KEY = os.getenv('SECRET_KEY')
     db_uri = 'postgresql://{}:{}@{}:{}/{}'.format(
                 os.getenv('POSTGRES_USER'),
                 os.getenv('POSTGRES_PASS'),
@@ -24,5 +24,5 @@ class Config:
     
 
     PORT = os.getenv('PORT', 8080)
-    HASH_KEY = os.getenv('HASH_KEY', None)
 
+    TOKEN = os.getenv('TOKEN', None)
