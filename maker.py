@@ -1,5 +1,4 @@
 from flask import Flask
-
 from api.rest.login import USER_BLUEPRINT
 
 

@@ -1,4 +1,3 @@
-from werkzeug.utils import validate_arguments
 from conf.database import Config
 from maker import create_app
 from flask_cors import CORS
